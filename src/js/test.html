@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let usdt = 10000;
+    let btc = 100;
+    let num = 100;
+
+    // (btc * usdt) /  = (btc - 10) * (usdt + x);
+    // console.log((btc * usdt) /(btc - 10) - usdt);
+    // x = 1111.1111111111113;
+    // btc * usdt =  (btc + 10) * (usdt - x);
+    // ( btc * usdt) / (btc + 10) =   usdt - x;
+
+    // btc * usdt /(usdt + 100) =  btc - x
+
+    // x = btc -  ((btc * usdt) /(usdt + num)) -- 买
+    console.log(btc -  ((btc * usdt) /(usdt + num)));
+
+    // btc * usdt =  (btc + num) * (usdt - x);
+    // btc * usdt / (btc + num) =  usdt - x;
+    // x = usdt -  (btc * usdt / (btc + num));  -- 卖
+    // console.log(usdt -  (btc * usdt / (btc + num)))
+
+
+</script>
+</body>
+</html>
